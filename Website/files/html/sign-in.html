@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HMS | Welcome Back!</title>
+    <link rel="shortcut icon" type="img/x-icon" href="/files/images/logo.png"/>
+    <link rel="stylesheet" href="/files/css/sign-in.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <img src="/files/images/sign-in.png">
+        <div class="container">
+            <img src="/files/images/logo.png" alt="" class="logo">
+            <h2>Welcome Back!</h2>
+            <p class="start">
+                Sign in now and find rooms for you to stay!
+            </p>
+            <form action="/files/php/sign-in.php" method="GET" enctype="multipart/form-data">
+                <input type="text" placeholder="Username or Email Address" name="identity" id="identity" class="input"><br>
+                <input type="password" placeholder="Password" name="password" id="password" class="input pass"><br>
+                <input type="checkbox" onclick="togglePassword(password)" class = "check">
+                <p class="error-message" id="error"></p>
+                <input type="submit" name="submit" value="Sign in" class="submit">
+            </form>
+            
+            <p class="other-sources">
+                Or Sign In using one of these accounts
+            </p>
+            <div class="sources">
+                <i class="fab fa-google"></i>
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-twitter"></i>
+            </div>
+            <p class="sign-in">
+                Doesn’t have an account? <a href="/files/html/sign-up.html"> Sign up here. </a>
+            </p>
+        </div>
+        
+    </main>
+
+    <script>
+        const password = document.getElementById("password");
+
+        function togglePassword(field){
+            if (field.type === "password") {
+                field.type = "text";
+            } else {
+                field.type = "password";
+            }
+        }
+    </script>
+</body>
+</html>

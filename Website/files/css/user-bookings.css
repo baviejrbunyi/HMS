@@ -1,0 +1,233 @@
+main {
+    min-height: 80vh;
+    max-height: 80vh;
+    margin: 50px 100px;
+}
+
+.booking-carousel{
+    margin-top: 80px;
+    display: flex;
+    overflow: scroll;
+    height: 400px;
+    align-items: center;
+}
+
+.bookings {
+    min-width: 210px;
+    min-height: 350px;
+    max-width: 210px;
+    max-height: 350px;
+    background-color: #D4F1F4;
+    margin-right: 20px;
+    padding: 20px;
+}
+
+.bookings:hover {
+    transform: translateY(-20px);
+}
+
+.booking-carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.bookings input[type=text], label {
+    border: none;
+    background: none;
+    color: #05445E;
+
+}
+
+label {
+    font-size: 10pt;
+    font-weight: bold;
+}
+
+.room-number {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    width: 100px;
+
+}
+
+.room-type {
+    margin-bottom: 10px;
+
+}
+
+.room-company {
+    margin-bottom: 50px;
+
+}
+
+.room-check-in {
+    margin-bottom: 10px;
+    font-size: 10pt;
+    width: 100px;
+    
+
+}
+
+.room-check-out {
+    margin-bottom: 40px;
+    font-size: 10pt;
+    width: 100px;
+
+}
+
+.room-status {
+    margin-bottom: 20px;
+}
+
+.view-booking {
+    background: #05445E;
+    color: #D4F1F4;
+    padding: 5px;
+    width: 100%;
+    font-weight: bold;
+}
+
+.view-booking:hover {
+    background: #FCDFA6;
+    color: #05445E;
+
+}
+
+.booking-pop-up {
+    display: none;
+}
+
+.booking-pop-up.active {
+    display: block;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 600px;
+    min-height: 600px;
+    background: #D4F1F4;
+    z-index: 100;
+    padding: 25px;
+}
+
+.close {
+    background: none;
+    color: #747474;
+    border: none;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    font-size: 20px;
+}
+
+.close:hover {
+    color: #FCDFA6;
+    cursor: pointer;
+    transform: scale(1.5,1.5);
+}
+
+.booking-full input[type=text]{
+    background: none;
+    color: #05445E;
+    border: none;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info h2 {
+    color: #05445E;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.info input[type=text]{
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.pop-room-number {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 25px;
+
+}
+
+.pop-room-type {
+    font-size: 16px;
+    margin-bottom: 10px;
+    
+}
+
+.pop-room-company {
+    font-size: 16px;
+    margin-bottom: 25px;
+    
+}
+
+.pop-room-status {
+    width: 50%;
+    height: 50px;
+}
+
+.cancel-booking {
+    background: #05445E;
+    font-weight: bold;
+    padding: 5px;
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+    width: 200px;
+    
+}
+
+.pop-room-notes {
+    background: none;
+    color: #05445E;
+    width: 100%;
+    height: 100px;
+    border: none;
+    resize: none;
+}
+
+.pop-room-notes::-webkit-scrollbar {
+    display: none;
+}
+
+.page-head {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.filter-form {
+    margin-top: 20px;
+}
+
+.filter-option {
+    background: none;
+    border: 1pt #D4F1F4 solid;
+    color: #D4F1F4;
+    padding: 5px;
+    width: 150px;
+}
+
+option {
+    color: #05445E;
+}
+
+.filter-btn {
+    background: #D4F1F4;
+    padding: 5px;
+    width: 100px;
+    color: #05445E;
+    font-weight: bold;
+}
+
+.filter-btn:hover {
+    background-color: #FCDFA6;
+    cursor: pointer;
+}
+

@@ -1,0 +1,48 @@
+main {
+    margin: 100px 300px;
+    min-height: 65vh;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 50px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 25px;
+}
+
+input {
+    font-size: 12pt;
+}
+
+textarea {
+    font-size: 12pt;
+    background: none;
+    border: 1pt solid #D4F1F4;
+    height: 200px;
+}
+
+input[type=submit]{
+    width: 200px;
+    margin: 0 auto;
+    display: block;
+    background-color: #D4F1F4;
+    color: #05445E;
+    font-weight: bold;
+}
+
+input[type=submit]:hover {
+    background-color: #FCDFA6;
+    cursor: pointer;
+}
+
+#error {
+    margin-bottom: 20px;
+    color: #FCDFA6;
+    text-align: center;
+}
+

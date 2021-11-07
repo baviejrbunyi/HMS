@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HMS | Join Us Now!</title>
+    <link rel="shortcut icon" type="img/x-icon" href="/files/images/logo.png"/>
+    <link rel="stylesheet" href="/files/css/sign-up.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <img src="/files/images/logo.png" alt="" class="logo">
+            <h2>Getting Started?</h2>
+            <p class="start">
+                We strive only for the best! <br> Join Us Now!
+            </p>
+
+            <form action="/files/php/sign-up.php" method="GET" enctype="multipart/form-data">
+                <input type="text" placeholder="Username" name="username" class="input" id="username"><br>
+                <input type="text" placeholder="Email Address" name="email"  class="input" id="email"><br>
+                <input type="password" placeholder="Password" name="password" class="input pass" id="password"><br>
+                <p class="error-message" id="error"></p>
+                <input type="submit" name = "submit" value="Sign Up" class="submit" id = "submit">
+                <input type="checkbox" onclick="togglePassword(password)" class = "check">
+            </form>
+            <p class="other-sources">
+                Or Sign Up using one of these accounts
+            </p>
+            <div class="sources">
+                <i class="fab fa-google"></i>
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-twitter"></i>
+            </div>
+            <p class="sign-in">
+                Already have an account? <a href="/files/html/sign-in.html"> Log in here.</a>
+            </p>
+        </div>
+        <img src="/files/images/sign-up.png">
+    </main>
+
+    <script>
+
+        const password = document.getElementById("password");
+        const error = document.getElementById('error');
+
+        password.onkeyup = function(){
+
+            var valid =  /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{6,20}$/;
+            if(!password.value.match(valid)){
+                error.innerHTML = "Password must be 6-20 characters, and must contain atleast one uppercase letter, one lowercase letter,one special character, and one number."
+            }else {
+                error.innerHTML = "";
+            }
+        }
+
+        function togglePassword(field){
+            if (field.type === "password") {
+                field.type = "text";
+            } else {
+                field.type = "password";
+            }
+        }
+
+        const email = document.getElementById("email");
+
+        email.onkeyup = function(){
+
+            var validEmail =  /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+            if(!email.value.match(validEmail)){
+                error.innerHTML = "Email is not valid."
+                console.log("Email is not valid");
+            }else {
+                error.innerHTML = "";
+                console.log("Email is valid");
+            }
+        }
+
+        
+
+
+    </script>
+    
+    
+</body>
+</html>

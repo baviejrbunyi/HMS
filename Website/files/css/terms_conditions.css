@@ -1,0 +1,20 @@
+main {
+    margin: 100px 300px 50px 300px;
+    line-height: 30px;
+    text-align: justify;
+    overflow: scroll;
+    max-height: 65vh;
+
+}
+
+main::-webkit-scrollbar {
+    display: none;
+}
+
+h1 {
+    text-align: center;
+}
+
+p , h2{
+    margin-bottom: 25px;
+}

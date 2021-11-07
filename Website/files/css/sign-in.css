@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    outline: none;
+    font-family: 'Poppins';
+}
+body {
+    background: #05445E;
+}
+main {
+    background: #fff;
+    display: flex;
+    margin: 50px 150px;
+}
+main img {
+    width: 60%;
+    height: 690px;
+}
+.logo {
+    width: 120px;
+    height: 75px;
+}
+.container {
+    width: 100%;
+    margin: 50px 100px 50px 50px;
+}
+.container h2 {
+    font-size: 35px;
+    margin-top: 50px;
+}
+.start {
+    font-size: 15px;
+    margin: 10px 0 50px 0;
+    font-weight: normal;
+}
+.input {
+    border: none;
+    border-bottom: 1pt #000 solid;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.submit {
+    background: #05445E;
+    width: 150px;
+    color: #fff;
+    padding: 5px;
+    margin: 20px auto;
+    display: block;
+    margin-bottom: 50px;
+}
+.submit:hover {
+    background: #D4F1F4;
+    color: #000;
+    opacity: .8;
+    cursor: pointer;
+}
+
+.other-sources {
+    font-size: 10pt;
+    text-align: center;
+    margin: 10px 0;
+}
+.sources {
+    font-size: 20px;
+    margin: 10px 0;
+    text-align: center;
+}
+.sources i {
+    margin: 0 10px;
+}
+.sources i:hover {
+    color: #FCDFA6;
+    cursor: pointer;
+}
+.sign-in {
+    font-size: 8pt;
+    text-align: center;
+}
+
+.sign-in a {
+    color: #05445E;
+}
+
+.pass {
+    margin-bottom: 20px;
+}
+
+.error-message {
+    color: #CB6565;
+    font-size: 8pt;
+    margin: 0;
+}
+
+.check {
+    position: absolute;
+    top: 425px;
+    right: 250px;
+    cursor: pointer;
+}

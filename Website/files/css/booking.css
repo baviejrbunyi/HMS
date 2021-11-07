@@ -1,0 +1,129 @@
+main {
+    min-height: 80vh;
+    margin: 50px 100px;
+    display: flex;
+}
+
+.hotel-info {
+    width: 550px;
+    margin-right: 50px;
+}
+.hotel-info img {
+    width: 550px;
+    height: 350px;
+    margin-bottom: 25px;
+}
+
+.package, .payment {
+    background: none;
+}
+
+.booking-info * {
+    margin-bottom: 20px;
+}
+
+.booking-info h2 {
+    margin-bottom: 25px;
+}
+
+input[type=submit], .cancel{
+    padding: 5px;
+    background-color: #D4F1F4;
+    color: #05445E;
+    font-weight: bold;
+    width: 142px;
+}
+
+input[type=submit]:hover, .cancel:hover {
+    background: #FCDFA6;
+    cursor: pointer;
+}
+
+.branch {
+    display: flex;
+    justify-content: space-between;
+}
+
+.branch h2 {
+    font-size: 12pt;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+select {
+    border: #D4F1F4 1pt solid;
+}
+
+option {
+    color: #05445E;
+}
+
+.package {
+    margin-left: 69px;
+}
+
+.check-in {
+    margin-left: 70px;
+}
+
+.check-out {
+    margin-left: 60px;
+}
+
+.room-number {
+    margin-left: 28px;
+}
+
+.payment {
+    margin-left: 10px;
+}
+
+select, input[type=text], input[type=date] {
+    padding: 5px;
+    width: 150px;
+}
+
+.buttons {
+    position: absolute;
+
+}
+
+#book {
+    width: 300px;
+    margin-right: 50px;
+}
+
+.booking-info {
+    display: flex;
+}
+
+.payment-summary {
+    width: 330px;
+
+}
+
+.error, .note-content, .note-header {
+    font-size: 8pt;
+    color: #FCDFA6;
+    line-height: 20px;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.total, .down-payment, .balance {
+    width: 150px;
+    padding: 5px;
+}
+
+.total{
+    margin-left: 110px;
+}
+
+.down-payment {
+    margin-left: 40px;
+}
+
+.balance {
+    margin-left: 90px;
+}
+

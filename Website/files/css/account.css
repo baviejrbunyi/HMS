@@ -1,0 +1,335 @@
+main {
+    margin-top: 50px;
+}
+
+main h1 {
+    margin: 100px 0 50px 100px;
+}
+
+.left {
+    width: 400px;
+    height: 70vh;
+}
+
+.button-container button{
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    margin-bottom: 50px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+
+.panels {
+    min-width: 710px;
+    min-height: 70vh;
+    position: absolute;
+    top: 185px;
+    left: 650px;
+}
+
+
+.accnt {
+    width: 100%;
+    min-height: inherit;
+    display: flex;
+}
+
+.left-account{
+    margin-right: 50px;
+}
+
+.left-account img {
+    min-width: 200px;
+    min-height: 200px;
+    max-width: 200px;
+    max-height: 200px;
+    margin-bottom: 20px;
+}
+
+.cancel {
+    position: absolute;
+    background: #05445E;
+    color: #D4F1F4;
+    width: 200px;
+    padding: 5px;
+    text-align: center;
+    left: 0px;
+    top: 171px;
+    border: 1pt solid #D4F1F4;
+    cursor: pointer;
+    display: none;
+    
+}
+
+.profile-pic:hover ~ .cancel {
+    display: block;
+}
+
+
+.left-account button:hover, .save-changes:hover {
+    background-color: #FCDFA6;
+    cursor: pointer;
+}
+
+.save-changes {
+    margin-top: 230px;
+}
+
+.name, .username, .address, .email, .phone, .password {
+    border: none;
+    border-bottom: 1pt solid #D4F1F4;
+    margin-bottom: 25px;
+    font-size: 12pt;
+    width: 260px;
+}
+
+.name {
+    margin-left: 50px;
+}
+
+.username {
+    margin-left: 20px;
+}
+
+.address {
+    margin-left: 34px;
+}
+
+.email {
+    margin-left: 53px;
+}
+
+.phone {
+    margin-left: 45px;
+}
+
+.password {
+    margin-left: 19px;
+    
+}
+
+.log-out {
+    margin-top: 240px;
+}
+
+.edit {
+    display: block;
+    position: absolute;
+    top: 225px;
+    left: 580px;
+    cursor: pointer;
+}
+
+.edit.remove {
+    display: none;
+}
+
+
+a:hover, .edit:hover {
+    color: #FCDFA6;
+}
+
+.left-account button, .save-changes{
+    width: 200px;
+    padding: 10px;
+    background-color: #D4F1F4;
+    color: #05445E;
+    font-weight: bolder;
+}
+
+.message {
+    font-size: 8pt;
+    color: #FCDFA6;
+    position: absolute;
+    display: block;
+}
+
+.message.remove {
+    display: none;
+}
+
+
+.change-password {
+    display: none;
+}
+
+.change-password.active {
+    display: block;
+    position: absolute;
+    top: 275px;
+    left: 350px;
+}
+
+.change-password input[type=password]{
+    border: none;
+    border-bottom: 1pt solid #D4F1F4;
+    font-size: 12pt;
+    margin-bottom: 25px;
+    width: 257px;
+}
+
+.change-password input[type=text]{
+    border: none;
+    border-bottom: 1pt solid #D4F1F4;
+    font-size: 12pt;
+    margin-bottom: 25px;
+    width: 257px;
+}
+
+.submit-pass, .cancel-change {
+    padding: 5px;
+    background-color: #D4F1F4;
+    color: #05445E;
+    font-weight: bold;
+    min-width: 100px;
+    margin-right: 20px;
+}
+
+.submit-pass:hover, .cancel-change:hover {
+    background-color: #FCDFA6;
+    cursor: pointer;
+}
+
+.check-one{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 5px;
+}
+
+.check-two{
+    display: block;
+    position: absolute;
+    top: 45px;
+    right: 5px;
+}
+
+.check-three {
+    display: block;
+    position: absolute;
+    top: 90px;
+    right: 5px;
+}
+
+.default {
+    display: none;
+}
+
+.add-payment-option {
+    display: none;
+}
+
+.add-payment-option.active {
+    display: block;
+    position: fixed;
+    min-width: 500px;
+    min-height: 600px;
+    max-width: 500px;
+    max-height: 600px;
+    background: #D4F1F4;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 50px;
+}
+
+.payment-option {
+    border: #D4F1F4 solid 1pt;
+    width: 400px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.info {
+    font-weight: 200;
+    margin-top: 10px;
+}
+
+.add-payment {
+    background-color: #D4F1F4;
+    color: #05445E;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.add-payment:hover {
+    background: #FCDFA6;
+    cursor: pointer;
+}
+
+.add-payment-option h2 {
+    color: #05445E;
+    margin-bottom: 30px;
+}
+
+.add-payment-option label, option {
+    color: #05445E;
+}
+
+
+.add-card-number, .add-card-expiry , .add-card-type, .add-card-cvv {
+    border: #05445E 1pt solid;
+    padding: 5px;
+    background: none;
+    color: #05445E;
+    margin-bottom: 25px;
+    width: 260px;
+}
+
+.add-card-type {
+    margin-left: 52px;
+}
+
+.add-card-number {
+    margin-left: 28px;
+}
+
+.add-card-expiry {
+    margin-left: 80px;
+}
+
+.add-card-cvv {
+    margin-left: 25px;
+}
+
+
+.add-card-number::placeholder, .add-card-cvv::placeholder {
+    color: #05445E;
+}
+
+.add-payment-method, .cancel-payment-add {
+    color: #D4F1F4;
+    background: #05445E;
+    padding: 10px;
+    min-width: 100px;
+    margin-top: 180px;
+}
+
+.add-payment-error {
+    color: rgb(255, 0, 0);;
+    font-size: 8pt;
+    margin-left: 130px;
+    width: 260px;
+    line-height: 20px;
+    position: absolute;
+}
+
+.panels {
+    overflow: scroll;
+    max-height: 65vh;
+}
+
+.panels::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+
+
+

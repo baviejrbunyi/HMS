@@ -1,0 +1,301 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+    color: #D4F1F4;
+    outline: none;
+}
+
+input {
+    background-color: #05445E;
+    color: #D4F1F4;
+    border: 1pt solid #D4F1F4;
+}
+
+::placeholder {
+    color: #D4F1F4;
+}
+
+body {
+    background-color: #05445E;
+}
+
+header {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    margin-left: 100px;
+    margin-top: -15px;
+}
+
+.nav {
+    display: flex;
+}
+
+.nav li {
+    text-decoration: none;
+    list-style: none;
+    margin-right: 50px;
+}
+
+.nav li:last-child {
+    margin-right: 100px;
+}
+
+.nav li a {
+    text-decoration: none;
+}
+
+.nav li a:hover {
+    color: #FCDFA6;
+}
+
+main {
+    margin: 0 100px 0 100px;
+}
+
+.tag {
+    font-size: 50px;
+    text-align: center;
+}
+
+.search-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 90vh;
+}
+
+.search{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.search-field, .search-button, label, .date {
+    font-size: 20px;
+    padding: 10px;
+    
+}
+
+.search-field {
+    width: 800px;
+}
+
+.search-button {
+    background-color: #D4F1F4;
+    color: #05445E;
+    width: 200px;
+    outline: auto;
+}
+
+.search-button:hover {
+    background-color: #FCDFA6;
+    cursor: pointer;
+}
+
+.secondary-search {
+    margin-top: 50px;
+    align-self: flex-start;
+    margin-left: -10px;
+}
+
+.date {
+    width: 280px;
+    cursor: pointer;
+    margin-right: 30px;
+}
+
+.date::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+}
+
+.recommendations h2 {
+    margin-bottom: 50px;
+}
+
+.carousel {
+    display: flex;
+    overflow: scroll;
+    height: 500px;
+    align-items: center;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.card {
+    background: #D4F1F4;
+    width: 200px;
+    margin-right: 20px;
+    min-height: 400px;
+    max-height: 400px;
+}
+
+.card input[type=text], .card textarea {
+    background: none;
+    color: #05445E;
+    border: none;
+}
+
+.room-image {
+    width: 200px;
+    height: 150px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+
+.room-type {
+    font-weight: bold;
+    margin-bottom: 5px;
+
+
+}
+
+.room-company {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 25px;
+
+}
+
+.room-address {
+    min-width: 150px;
+    height: 50px;
+    overflow: hidden;
+    resize: none;
+    background: #05445E;
+    margin-bottom: 20px;
+}
+
+
+.rating-price {
+    width: 100%;
+    background-color: #FCDFA6;
+    padding: 10px;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.room-price {
+    width: 50px;
+    
+
+}
+
+.room-rating {
+    width: 50px;
+    text-align: right;
+
+}
+
+.info {
+    padding: 20px;
+}
+
+
+
+.hotel-address {
+    font-weight: 100;
+    margin-top: 10px;
+    font-size: 10pt;
+    min-height: 100px;
+}
+
+footer {
+    min-height: 200px;
+    border-top: 1pt solid #D4F1F4;
+    margin: 100px 100px 0 100px;
+}
+
+.pop-up {
+    display: none;
+}
+
+.pop-up.active {
+    position: fixed;
+    display: flex;
+    min-width: 800px;
+    min-height: 600px;
+    max-width: 800px;
+    max-height: 600px;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 20;
+    background-color: #D4F1F4;
+}
+
+.full-image {
+    min-width: 400px;
+    min-height: 600px;
+    max-width: 400px;
+    max-height: 600px;
+}
+
+.full-info p, h3, h4 {
+    color: #05445E;
+}
+
+.full-info {
+    padding: 30px;
+}
+
+.full-type {
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+.full-company {
+    margin-bottom: 10px;
+    font-size: 12pt;
+}
+
+.full-address {
+    margin-bottom: 30px;
+    font-size: 10pt;
+}
+
+.full-details {
+    min-height: 300px;
+    max-height: 300px;
+    margin-bottom: 10px;
+    font-size: 13pt;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.full-rating {
+    font-size: 12pt;
+}
+
+.full-price {
+    margin-bottom: 20px;
+    font-size: 12pt;
+
+}
+
+.exit, .book {
+    width: 100px;
+    background-color: #05445E;
+    color: #D4F1F4;
+    padding: 5px;
+    margin-right: 20px;
+}
+
+.book:hover, .exit:hover {
+    background-color: #FCDFA6;
+    cursor: pointer;
+    color: #05445E;
+}

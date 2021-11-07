@@ -1,0 +1,87 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    outline: none;
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: #D4F1F4;
+  }	
+  header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #05445E;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+  .logo-container img {
+    margin-top: 30px;
+    margin-left: 100px;
+    width: 100px;
+    height: 75px;
+  }
+  .nav {
+    display: flex;
+  }
+  .nav li {
+    margin: 50px 100px 50px 0;
+    font-size: 20px;
+    list-style: none;
+  }
+  .nav li a {
+    text-decoration: none;
+    color: #fff;
+  }
+  .nav li a:hover {
+    cursor: pointer;
+    color: #FCDFA6;
+  }
+
+  .presentation {
+    display: flex;
+    justify-content: space-around;
+    margin: 100px 50px 0 100px;
+  }
+
+  .image {
+    height: 500px;
+    width: 750px;
+    margin-top: -60px;
+
+  }
+
+  .Intro-text h1 {
+    margin: 50px 0 10px 0;
+    font-size: 45px;
+    font-family: 'Roboto';
+    font-weight: bold;
+  }
+  .Intro-text p {
+    margin: 20px 0 50px 0;
+    width: 400px;
+    font-size: 15px;
+    font-family: 'Roboto';
+    font-weight: 300;
+    line-height: 30px;
+  }
+
+  .cta-watch {
+    border: none;
+    background-color:#05445E;
+    color: #D4F1F4;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 15px;
+    text-decoration: none;
+  }
+
+.cta-watch:hover {
+  background-color:#FCDFA6;
+  color: #05445E;
+  border: 1pt solid #05445E;
+}
+  
